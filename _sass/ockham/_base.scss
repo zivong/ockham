@@ -5,6 +5,7 @@
 body {
   font-family: var(--body-font);
   font-size: var(--body-font-size);
+  line-height: var(--body-line-height);
   color: var(--body-color);
   background-color: var(--body-bg);
 }
@@ -17,4 +18,63 @@ a {
   &:hover {
     text-decoration: underline;
   }
+}
+
+blockquote {
+  opacity: .5;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0 var(--spacer);
+  border-left: .1em solid;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin: 1em 0;
+  border-radius: var(--border-radius);
+}
+
+code, pre {
+  font-family: var(--code-font);
+}
+
+code {
+  padding: .1em .25em;
+  background-color: var(--code-bg);
+  border-radius: var(--border-radius);
+}
+
+pre {
+  overflow: auto;
+  padding: 1em;
+  margin: 1em 0;
+
+  code {
+    padding: 0;
+    background-color: inherit;
+  }
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: .25em .5em;
+  border-bottom: 1px solid var(--border-color);
+}
+
+thead th {
+  border-bottom-color: currentColor;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--border-color);
 }

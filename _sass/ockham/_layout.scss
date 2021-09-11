@@ -50,3 +50,43 @@
   opacity: .5;
   font-size: .8em;
 }
+
+.highlight {
+  border-radius: var(--border-radius);
+  background-color: var(--code-bg);
+}
+
+.rouge-table {
+  border: 0;
+
+  td,
+  th {
+    border: 0;
+    padding: 0;
+  }
+
+  pre {
+    padding: 0;
+    margin: 0;
+  }
+
+  .gutter {
+    user-select: none;
+    opacity: .5;
+    padding-right: 1em;
+  }
+}
+
+#markdown-toc {
+  font-size: .8em;
+  padding: 2em 3em;
+  margin: 2em 0;
+  border: solid var(--border-color);
+  border-width: 1px 0;
+
+  &::before {
+    display: block;
+    margin-left: -3em;
+    content: "TOC";
+  }
+}
