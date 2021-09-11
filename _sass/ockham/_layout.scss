@@ -25,8 +25,28 @@
   margin-bottom: var(--spacer-2);
 }
 
-.page {
+.page, .post {
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
   }
+}
+
+.post-entry {
+  margin-bottom: var(--spacer-2);
+
+  .post-title {
+    margin-top: 0;
+    margin-bottom: var(--spacer);
+  }
+}
+
+.post {
+  .post-title {
+    margin-bottom: 0;
+  }
+}
+
+.post-meta {
+  opacity: .5;
+  font-size: .8em;
 }
