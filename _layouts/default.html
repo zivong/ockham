@@ -13,7 +13,18 @@
         </h3>
       </header>
 
-      {{ content }}
+      <main>
+        {{ content }}
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>
+          {%- if site.author -%}
+            &nbsp;<a href="{{ site.author.url }}" target="_blank">{{ site.author.name }}</a>
+          {%- endif -%}. All rights reserved.
+        </small>
+      </footer>
     </div>
   </body>
 </html>

@@ -4,6 +4,11 @@
   margin: 0 auto;
 }
 
+.masthead {
+  margin-top: var(--spacer-2);
+  margin-bottom: var(--spacer-3);
+}
+
 .masthead-title {
   a {
     color: inherit;
@@ -13,4 +18,9 @@
   small {
     opacity: .5;
   }
+}
+
+.footer {
+  margin-top: var(--spacer-3);
+  margin-bottom: var(--spacer-2);
 }
