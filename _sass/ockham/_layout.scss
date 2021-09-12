@@ -1,3 +1,8 @@
+.wrap {
+  position: relative;
+  width: 100%;
+}
+
 .container {
   max-width: 45rem;
   padding: 0 var(--spacer);
@@ -5,7 +10,7 @@
 }
 
 .masthead {
-  margin-top: var(--spacer-2);
+  margin-top: var(--spacer);
   margin-bottom: var(--spacer-3);
 }
 
@@ -20,9 +25,18 @@
   }
 }
 
+@media (max-width: $md-screen) {
+  .masthead-title {
+    text-align: center;
+  }
+  .masthead-title small {
+    display: none;
+  }
+}
+
 .footer {
   margin-top: var(--spacer-3);
-  margin-bottom: var(--spacer-2);
+  margin-bottom: var(--spacer);
 }
 
 .page, .post {
