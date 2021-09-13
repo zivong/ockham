@@ -12,6 +12,11 @@
   -webkit-transition: all .3s ease-in-out;
           transition: all .3s ease-in-out;
 }
+@media (max-width: $md-screen) {
+  .sidebar {
+    font-size: .8em;
+  }
+}
 
 .sidebar a {
   color: var(--oc-white);
@@ -23,6 +28,27 @@
 
 .sidebar-item {
   padding: var(--spacer-2);
+}
+
+.sidebar-nav {
+  border-bottom: 1px solid var(--border-color);
+}
+.sidebar-nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.sidebar-nav-item {
+  display: block;
+  padding: var(--spacer) var(--spacer-2);
+  border-top: 1px solid var(--border-color);
+}
+.sidebar-nav-item.active,
+a.sidebar-nav-item:hover,
+a.sidebar-nav-item:focus {
+  text-decoration: none;
+  background-color: rgba(255,255,255,.1);
+  border-color: transparent;
 }
 
 .sidebar-checkbox {

@@ -3,4 +3,18 @@
   <div class="sidebar-item">
     <p>{{ site.description }}</p>
   </div>
+
+  {% if site.data.navigation %}
+  <nav class="sidebar-nav">
+    <ul class="sidebar-nav-list">
+    {% for item in site.data.navigation %}
+      <li">
+        <a href="{{ item.url | relative_url }}" class="sidebar-nav-item {% if page.url == item.url %}active{% endif %}">
+          {{ item.title }}
+        </a>
+      </li>
+    {% endfor %}
+    </ul>
+  </nav>
+  {% endif %}
 </div>
