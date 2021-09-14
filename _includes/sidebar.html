@@ -17,4 +17,14 @@
     </ul>
   </nav>
   {% endif %}
+
+  {% if site.data.social %}
+  <div class="sidebar-item">
+    {% for social in site.data.social %}
+      <a class="social-icon" href="{{ social.url }}" target="_blank">
+        <i class="{{ social.icon | default: 'fas fa-link' }}" title="{{ social.title }}"></i>
+      </a>
+    {% endfor %}
+  </div>
+  {% endif %}
 </div>
