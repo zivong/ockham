@@ -27,3 +27,25 @@ layout: default
   {{ content }}
 
 </article>
+
+<div class="post-pagination">
+  {% if page.previous %}
+    <a class="post-pagination-item older" href="{{ page.previous.url | relative_url }}">
+      <span class="post-pagination-title">
+        <i class="fas fa-arrow-left"></i> {{ page.previous.title | markdownify | strip_html }}
+      </span>
+    </a>
+  {% else %}
+    <span class="post-pagination-item older"></span>
+  {% endif %}
+
+  {% if page.next %}
+    <a class="post-pagination-item newer" href="{{ page.next.url | relative_url }}">
+      <span class="post-pagination-title">
+        {{ page.next.title | markdownify | strip_html }} <i class="fas fa-arrow-right"></i>
+      </span>
+    </a>
+  {% else %}
+    <span class="post-pagination-item newer"></span>
+  {% endif %}
+</div>
