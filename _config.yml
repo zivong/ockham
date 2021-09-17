@@ -1,0 +1,11 @@
+title: Ockham
+tagline: Entia non sunt multiplicanda praeter necessitatem
+description: Ockham is a content-first minimalist <a href="https://jekyllrb.com" target="_blank">Jekyll</a> blog theme. Made by <a href="https://twitter.com/zivong91" target="_blank">@zivong91</a>, but inspired by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.
+author:
+  name: Song-Zi Vong
+  url: https://twitter.com/zivong91
+
+plugins:
+  - jekyll-paginate
+
+paginate: 3
