@@ -1,11 +1,12 @@
 # ockham
 
-Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
+> Entia non sunt multiplicanda praeter necessitatem.
+>
+> -- William of Ockham
 
-To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
+Ockham is a content-first minimalist Jekyll blog theme.
 
-TODO: Delete this and the text above, and describe your gem
-
+![screenshot](screenshot.png)
 
 ## Installation
 
@@ -29,13 +30,34 @@ Or install it yourself as:
 
     $ gem install ockham
 
+If your website is hosted on GitHub Pages, you can install this theme via [`jekyll-remote-theme`](https://github.com/benbalter/jekyll-remote-theme).
+
+Add the following to your `Gemfile`:
+
+```ruby
+gem "jekyll-remote-theme"
+```
+
+And add this line to your Jekyll site's `_config.yml`:
+
+```yml
+plugins:
+  - jekyll-remote-theme
+```
+
+Add the following to your site's `_config.yml`:
+
+```yml
+remote_theme: zivong/ockham
+```
+
 ## Usage
 
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
+For more information about the usage of Ockham, please read the [tutorial](https://zivong.blog/ockham/tutorial/2021/09/12/tutorial.html).
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/hello. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at [https://github.com/zivong/ockham](https://github.com/zivong/ockham). This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## Development
 
@@ -49,4 +71,3 @@ To add a custom directory to your theme-gem, please edit the regexp in `ockham.g
 ## License
 
 The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
