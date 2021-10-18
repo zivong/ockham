@@ -207,3 +207,12 @@ span.post-pagination-item {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+.task-list-item {
+  list-style-type: none;
+
+  .task-list-item-checkbox {
+    margin: 0 .2em .25em -1.6em;
+    vertical-align: middle;
+  }
+}
