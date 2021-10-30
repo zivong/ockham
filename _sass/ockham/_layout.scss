@@ -217,3 +217,15 @@ span.post-pagination-item {
     vertical-align: middle;
   }
 }
+
+a[href^="#fn:"],
+a[href^="#fnref:"] {
+  display: inline-block;
+  margin-left: .1em;
+  font-weight: bold;
+}
+
+// List of footnotes
+.footnotes {
+  font-size: .8em;
+}
