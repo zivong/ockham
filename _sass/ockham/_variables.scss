@@ -17,6 +17,7 @@ $xl-screen: 80rem;
   --link-color: var(--oc-orange-8);
 
   --heading-font: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  --heading-color: var(--oc-black);
 
   --code-font: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
   --code-bg: var(--oc-gray-1);
@@ -35,6 +36,8 @@ $xl-screen: 80rem;
     --body-bg: var(--oc-gray-9);
 
     --link-color: var(--oc-blue-4);
+
+    --heading-color: var(--oc-white);
 
     --code-bg: var(--oc-gray-8);
   }
