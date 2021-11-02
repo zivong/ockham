@@ -30,16 +30,19 @@ ul, ol {
 }
 
 li {
+  padding-left: var(--spacer-half);
+  margin-left: calc(0em - var(--spacer-half));
+
   ul, ol {
-    padding-left: var(--spacer);
+    padding-left: var(--spacer-2);
   }
 }
 
 blockquote {
-  margin-right: 0;
-  margin-left: calc(0px - var(--spacer));
-  padding-left: var(--spacer);
   border-left: .2em solid;
+  padding-left: var(--spacer);
+  margin-left: calc(-.2em - var(--spacer));
+  margin-right: 0;
   font-style: italic;
 
   i {
