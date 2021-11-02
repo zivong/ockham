@@ -25,12 +25,26 @@ a {
   }
 }
 
+ul, ol {
+  padding-left: 0;
+}
+
+li {
+  ul, ol {
+    padding-left: var(--spacer);
+  }
+}
+
 blockquote {
-  opacity: .5;
-  margin-left: 0;
   margin-right: 0;
-  padding: 0 var(--spacer);
-  border-left: .1em solid;
+  margin-left: calc(0px - var(--spacer));
+  padding-left: var(--spacer);
+  border-left: .2em solid;
+  font-style: italic;
+
+  i {
+    font-style: normal;
+  }
 }
 
 figure {
