@@ -210,10 +210,15 @@ span.post-pagination-item {
 }
 
 .task-list-item {
+  display: flex;
   list-style-type: none;
+  margin-left: calc(-1em - var(--spacer));
 
   .task-list-item-checkbox {
-    margin: 0 .2em .25em -1.6em;
+    width:  1em;
+    height: 1em;
+    margin-right: var(--spacer-half);
+    margin-top: .25em;
     vertical-align: middle;
   }
 }
