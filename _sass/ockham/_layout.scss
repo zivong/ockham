@@ -214,20 +214,13 @@ span.post-pagination-item {
   }
 }
 
-.task-list {
-  list-style-type: none;
-  padding-left: 0;
-}
-li {
-  .task-list {
-    padding-left: 1.5em;
-  }
-}
 .task-list-item {
+  list-style-type: none;
+
   .task-list-item-checkbox {
     width: 1em;
     height: 1em;
-    margin-right: .5em;
+    margin: 0 .5em .2em -1.5em;
     vertical-align: middle;
   }
 }
