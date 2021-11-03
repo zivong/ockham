@@ -8,6 +8,11 @@
   padding: 0 var(--spacer-2);
   margin: 0 auto;
 }
+@media (max-width: $md-screen) {
+  .container {
+    padding: 0 var(--spacer);
+  }
+}
 
 .masthead {
   margin-top: var(--spacer);
@@ -209,16 +214,20 @@ span.post-pagination-item {
   }
 }
 
-.task-list-item {
-  display: flex;
+.task-list {
   list-style-type: none;
-  margin-left: calc(-1em - var(--spacer));
-
+  padding-left: 0;
+}
+li {
+  .task-list {
+    padding-left: 1.5em;
+  }
+}
+.task-list-item {
   .task-list-item-checkbox {
-    width:  1em;
+    width: 1em;
     height: 1em;
-    margin-right: var(--spacer-half);
-    margin-top: .25em;
+    margin-right: .5em;
     vertical-align: middle;
   }
 }
