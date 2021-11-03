@@ -39,8 +39,7 @@ li {
 }
 
 blockquote {
-  border-color: var(--border-color);
-  border-left: .2em solid;
+  border-left: .2em solid var(--border-color);
   padding-left: var(--spacer);
   margin-left: calc(-.2em - var(--spacer));
   margin-right: 0;
