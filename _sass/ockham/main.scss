@@ -3,7 +3,12 @@
 @import "base";
 @import "layout";
 @import "sidebar";
+@import "container";
+@import "post";
+@import "pagination";
+@import "archive";
 @import "highlight-light";
+
 @media (prefers-color-scheme: dark) {
   @import "highlight-dark";
 }

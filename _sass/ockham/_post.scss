@@ -1,0 +1,92 @@
+.page, .post {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--heading-color);
+  }
+}
+
+.post-title {
+  margin-bottom: 0;
+}
+
+.page-title {
+  margin-bottom: var(--spacer);
+}
+
+.post-meta {
+  opacity: .5;
+  font-size: .8em;
+  margin-bottom: var(--spacer);
+}
+
+.post-entry {
+  margin-bottom: var(--spacer-2);
+
+  .post-title {
+    margin-top: 0;
+    margin-bottom: var(--spacer);
+  }
+}
+
+.highlight {
+  border-radius: var(--border-radius);
+  background-color: var(--code-bg);
+}
+
+.rouge-table {
+  border: 0;
+
+  td,
+  th {
+    border: 0;
+    padding: 0;
+  }
+
+  pre {
+    padding: 0;
+    margin: 0;
+  }
+
+  .gutter {
+    user-select: none;
+    opacity: .5;
+    padding-right: 1em;
+  }
+}
+
+#markdown-toc {
+  font-size: .8em;
+  padding: 2em 3em;
+  margin: 2em 0;
+  border: solid var(--border-color);
+  border-width: 1px 0;
+
+  &::before {
+    display: block;
+    margin-left: -3em;
+    content: "TOC";
+  }
+}
+
+.task-list-item {
+  list-style-type: none;
+
+  .task-list-item-checkbox {
+    width: 1em;
+    height: 1em;
+    margin: 0 .2em .2em -1.2em;
+    vertical-align: middle;
+  }
+}
+
+a[href^="#fn:"],
+a[href^="#fnref:"] {
+  display: inline-block;
+  margin-left: .1em;
+  font-weight: bold;
+}
+
+// List of footnotes
+.footnotes {
+  font-size: .8em;
+}
