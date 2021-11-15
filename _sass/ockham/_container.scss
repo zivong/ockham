@@ -1,0 +1,43 @@
+.container {
+  max-width: $md-screen;
+  padding: 0 var(--spacer);
+  margin: 0 auto;
+}
+
+.masthead {
+  margin-top: var(--spacer);
+  margin-bottom: var(--spacer-3);
+}
+
+.masthead-title {
+  text-align: center;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  small {
+    display: none;
+  }
+}
+
+.footer {
+  margin-top: var(--spacer-3);
+  margin-bottom: var(--spacer);
+}
+
+@media (min-width: $md-screen) {
+  .container {
+    padding: 0 var(--spacer-2);
+  }
+
+  .masthead-title {
+    text-align: left;
+    
+    small {
+      display: inline;
+      opacity: .5;
+    }
+  }
+}

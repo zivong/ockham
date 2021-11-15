@@ -1,0 +1,36 @@
+.taxonomies {
+  list-style: none;
+  display: grid;
+  grid-column-gap: var(--spacer-2);
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+
+  .taxonomy {
+    display: flex;
+    padding: 0.25em 0;
+    justify-content: space-between;
+    margin-bottom: var(--spacer);
+    border-bottom: 1px solid var(--border-color);
+    color: var(--body-color);
+
+    &:focus,
+    &:hover {
+      color: var(--link-color);
+      text-decoration: none;
+    }
+  }
+}
+
+.post-list-by-taxonomy {
+  time {
+    font-family: monospace;
+  }
+}
+
+@media (min-width: $sm-screen) {
+  .taxonomies {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
