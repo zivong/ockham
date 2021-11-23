@@ -11,13 +11,13 @@
   border: 1px solid var(--border-color);
 
   &.older {
-    border-top-left-radius: var(--border-radius);
-    border-bottom-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
   }
 
   &.newer {
-    border-bottom-right-radius: var(--border-radius);
-    border-top-right-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+    border-top-left-radius: var(--border-radius);
   }
 }
 
@@ -55,11 +55,11 @@ span.post-pagination-item {
 @media (min-width: $md-screen) {
   .post-pagination-item {
     &.older {
-      text-align: left;
+      text-align: right;
     }
   
     &.newer {
-      text-align: right;
+      text-align: left;
     }
   }
 
