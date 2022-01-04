@@ -10,12 +10,12 @@
   padding: var(--spacer);
   border: 1px solid var(--border-color);
 
-  &.older {
+  &.right {
     border-top-right-radius: var(--border-radius);
     border-bottom-right-radius: var(--border-radius);
   }
 
-  &.newer {
+  &.left {
     border-bottom-left-radius: var(--border-radius);
     border-top-left-radius: var(--border-radius);
   }
@@ -26,8 +26,8 @@
 }
 
 .post-pagination-item {
-  &.older,
-  &.newer {
+  &.left,
+  &.right {
     text-align: center;
   }
 }
@@ -54,11 +54,11 @@ span.post-pagination-item {
 
 @media (min-width: $md-screen) {
   .post-pagination-item {
-    &.older {
+    &.right {
       text-align: right;
     }
   
-    &.newer {
+    &.left {
       text-align: left;
     }
   }
